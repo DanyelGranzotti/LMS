@@ -1,0 +1,65 @@
+/* import css variables */
+@import "./variables.css";
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s ease;
+}
+
+body {
+  background: var(--background-color);
+}
+
+header {
+  background: var(--blue-color);
+  color: var(--white-text-color);
+  height: 180px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+header a.active {
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+main {
+  margin-top: 180px;
+}
+
+/* buttons */
+.b2-btn-layout {
+  background: var(--secondary-blue-color);
+  color: var(--white-text-color);
+  border: none;
+  border-radius: 8px;
+  padding: 24px;
+  font-size: 20;
+  line-height: 12px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.b2-btn-layout:hover {
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.b2-btn-layout:disabled {
+  background: var(--gray-color);
+  color: var(--white-text-color);
+}

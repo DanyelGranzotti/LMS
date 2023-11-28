@@ -1,0 +1,39 @@
+.review-carrosel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.review-carrosel-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrosel-button {
+  color: var(--tertiary-blue-color);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carrosel-button:hover {
+  transform: scale(1.1);
+}
+
+.carrosel-button:active {
+  transform: scale(0.9);
+}
+
+.carrosel-button:disabled {
+  color: var(--gray-color);
+  cursor: not-allowed;
+}
